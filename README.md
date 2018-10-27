@@ -94,13 +94,13 @@ Gisteren was het me niet gelukt om mijn Vue.js applicatie werkend te krijgen.
 Ik wou hem zelf *clean* met alle benodigde packages installeren. Ik ben toen opnieuw begonnen met de Vue.js installatie met behulp van de Command Line Interface(CLI). 
 
 
-**Wat is Vue CLI?**
+**Wat is Vue CLI?**__
 Vue Command Line Interface is 1 van de manieren hoe je gebruik kan maken van de framework. Als je gebruikt maakt van de CLI, configureert de CLI automatisch de mappenstructuur en installeert die webpack(plugins om alle files te bundelen naar een minified version) voor Vue, zodat je gelijk aan de slag kan. Zie het als een soort boilerplate. Daarnaast heb je ook Vue GUI
 
-**Wat is Vue GUI?**
+**Wat is Vue GUI?**__
 Vue GUI doet inprincipe hetzelfde als de CLI. In plaats van dat je alles via de CLI moet configureren laat de GUI een interface zien
 
-**En kan het ook zonder CLI/GUI?**
+**En kan het ook zonder CLI/GUI?**__
 `<script src="https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.js"></script>`. 
 
 De bovenstaande regel laadt de Vue Library via een script tag in. Dit wordt meestal gedaan als je snel iets wilt testen of een website gaat maken met een paar pagina’s. Nadeel hiervan is, is dat je alle plugins zoals babel, jslint etc. zelf moet installeren.
