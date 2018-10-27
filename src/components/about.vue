@@ -1,8 +1,10 @@
 <template>
+<div class="aboutForm">
+    <router-link to="/"> Home </router-link>
     <div class="about">
-        <router-link to="/"> Home </router-link>
         <h1> {{ title }} </h1>
         <p> {{ text }} </p>
+    </div>
     </div>
 </template>
 
@@ -21,5 +23,6 @@ export default{
 </script>
 
 <style lang="scss">
-@import './about.scss'
+@import './about.scss';
+@import './home.scss';
 </style>
