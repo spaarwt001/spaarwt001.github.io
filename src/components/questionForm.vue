@@ -1,16 +1,13 @@
 <template>
-    <ul class="form" >
-        <li v-for="question in questionList" v-bind:key="question.question" >
-            {{ question.question }}
-            <questions v-bind:questionList="questionList">{{ questions.options }}</questions>
-        </li>
-    </ul>
+      <div class="form">
+          <questions v-for="question in questionList" v-bind:key="question.question" v-bind:question="question" />
+      </div>
 </template>
 
 <script>
 
-import questions from '../components/Questions'
 import questionList from '../questions/questionList'
+import questions from '../components/questions'
 
 export default {
   name: 'questionForm',
@@ -20,8 +17,8 @@ export default {
   },
 
   data () {
+    console.log(questionList)
     return {
-      questions,
       questionList
     }
   }
@@ -30,5 +27,5 @@ export default {
 </script>
 
 <style lang="scss">
-@import './questions.scss'
+    @import './questions.scss';
 </style>

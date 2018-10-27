@@ -4,7 +4,7 @@ import Vue from 'vue'
 import App from './App'
 import router from './router'
 
-Vue.config.productionTip = false
+export const serverBus = new Vue()
 
 /* eslint-disable no-new */
 new Vue({
