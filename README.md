@@ -1,4 +1,6 @@
-﻿# Front End Application
+# Front End Application
+
+![Screenshot](voorbeeld.png)
 
 In dit document vind je de dagplanning en gedane werkzaamheden voor de cursus Front End Application. Daarnaast word er gesproken over het concept en hoe je het concept kan installeren zodat je het te zien krijgt in je browser.
 
@@ -222,6 +224,16 @@ Selectbox selecteert alle velden met dezelfde antwoorden. Dit komt omdat v-model
 
 Om dit te voorkomen moest ik eerder en vaker op [Github](https://github.com/) gaan [committen](https://help.github.com/desktop/guides/contributing-to-projects/committing-and-reviewing-changes-to-your-project/) zodat ik altijd de vorige versie weer in kan laden. Daarnaast kan je ook bijhouden wat en wanneer je iets heb aangepast.
 
+## Herkansing
+Ik moest de opdracht herkansen omdat ik de nacht daarvoor last minute nog wat dingen wou aanpassen. Omdat ik niet mijn bestanden had gecommit, was ik alles kwijt. Mijn control-Z ging niet zover dan ik had gehoopt. Waardoor ik bij de beoordeling met een half product kwam. 
+
+**$emit & $on**
+met $emit kan je custom events aanmaken en deze meegeven aan een component. bijvoorbeeld een button. Vervolgens kan je met $on naar deze event luisteren om de acties uit te voeren die zijn meegeven met de $emit. De werking hiervan lijkt een beetje op props. Het verschil is dat je bij props alleen data van de parent component naar de child component kan meegeven. In sommige gevallen wil je soms communiceren met een component dat helemaal niet in relatie staat jouw desbetreffende component. Hierbij kan je goed gebruik maken van $emit en $on. Let wel op dat Vue.JS dit eigenlijk afkeurt. Vue.JS is zodanig gebouwd en bedoeld voor communicatie tussen de parent en child component (props). Maar voor kleine acties kan je best gebruik maken van $emit en $on.
+
+**Event Bus**
+Hierboven vertelde ik hoe we custom events kunnen aanmaken en deze kunnen meegeven en ontvangen. Maar de vraag is nog wie kan deze waardes opvangen en vervoeren zodat de desbetreffende component de juiste data meekrijgt. Hiervoor heb je een `event Bus`. De bus zorgt ervoor dat je in een component een `event` kan `emitten` en ervoor zorgen dat hiernaar geluisterd wordt in een andere component met `$on`. 
+
+
 ## Wat heb ik geleerd
 
  1. Het werken met een Framework (Vue.JS)
@@ -237,6 +249,9 @@ Om dit te voorkomen moest ik eerder en vaker op [Github](https://github.com/) ga
  11. Vue shorthands
  12. Vue router
  13. new Vue vs export Default
+ 14. $emit vs $on
+ 15. event Bus
+ 16. altijd committen!!!
 
     
     
