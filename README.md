@@ -118,12 +118,12 @@ De bovenstaande regel laadt de Vue Library via een script tag in. Dit wordt mees
 	 - Router.js -
 	 - Store.js -
 
-**Hoe wordt de vue app geladen in de browser?**
+**Hoe wordt de vue app geladen in de browser?**<br/>
 App.vue is onze root file waar al onze gemaakte componenten in zijn genest.
 
 Main.js verwerkt vervolgens alle componenten uit App.vue en past deze toe in Index.html bestand. Waardoor de app in de browser getoond kan worden.
 
-**Wat is VueX**
+**Wat is VueX**<br/>
 Is een state management systeem dat gebruikt wordt icm Vue. [VueX](https://vuex.vuejs.org/) kan ook gezien worden als een centrale punt voor alle data die we gebruiken en willen bewaren. Daarnaast functioneert het ook als een library voor Vue. Bij [VueX](https://vuex.vuejs.org/) zitten een paar belangrijke elementen:
 
  - State – Single state tree. Hiermee configureer je alle states van je
@@ -136,10 +136,10 @@ Is een state management systeem dat gebruikt wordt icm Vue. [VueX](https://vuex.
    mogelijk om je code op te delen in modules om het overzichtelijk te
    houden.
 
-**Wat is state management?**
+**Wat is state management?**<br/>
 State management biedt je de mogelijkheid om de status van een element te beheren. We nemen een stoplicht als voorbeeld. Die heeft 3 states: groen, oranje en rood. Deze moeten steeds constant geswitcht worden. Een state management helpt je daarbij.
 
-**Waneer maak je gebruik van VueX?**
+**Waneer maak je gebruik van VueX?**<br/>
 Als beginner zal je denken dat je al je data in [VueX](https://vuex.vuejs.org/) moet opslaan. Dit is meestal niet het geval. Het is alleen essentieel als je de data vanuit verschillende niet gerelateerde componenten wil benaderen. Het wordt aangeraden om het wel te gebruiken bij een middel tot groot project. Voor kleinere projecten kan je ook zonder [VueX](https://vuex.vuejs.org/) werken.
 
 Onder zie je een flow chart over wanneer wel/niet je data moet opslaan in Vuex.
@@ -150,7 +150,7 @@ Onder zie je een flow chart over wanneer wel/niet je data moet opslaan in Vuex.
 ## Dag 5 -- 12/10
 Gisteren heb ik voornamelijk onderzoek gedaan naar [Vue.js](https://vuejs.org/) en gekeken naar hoe alles in elkaar zit. Gisteren heb ik mijn Vue project geïnstalleerd met behulp van de [CLI](https://cli.vuejs.org/). De applicatie heb ik toen getest op hoe alles werkt en hoe alles gestructureerd is.
 
-**SCSS in Vue**
+**SCSS in Vue**<br/>
 Ik kwam erachter dat in de Vue file [HTML](https://developer.mozilla.org/nl/docs/Learn/Getting_started_with_the_web/HTML_basisbegrippen), [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS) & [JS](https://developer.mozilla.org/nl/docs/Learn/Getting_started_with_the_web/JavaScript_basics) geschreven wordt. Vandaag heb ik de CSS gestript van de file en in een externe file geplaatst. Met behulp van de methode `@import  './styles/main.scss'`.
 
 
@@ -184,7 +184,7 @@ Vandaag heb ik niet veel gewerkt aan mijn applicatie. Ik ben meer bezig geweest 
 
 ## Dag 7 -- 16/10
 
-**Computed vs Methods property in Vue.js**
+**Computed vs Methods property in Vue.js**<br/>
 De werking van beide property lijken op elkaar.  Het verschil is dat de [methods](https://vuejs.org/v2/guide/computed.html#Computed-Caching-vs-Methods) property alle functies binnenin de property opnieuw runt, ook al *target* je maar 1 functie. De [computed](https://vuejs.org/v2/guide/computed.html#Computed-Caching-vs-Methods) property runt alleen het desbetreffende functie.
 
 Bijvoorbeeld je hebt 2 optel functies in je [methods](https://vuejs.org/v2/guide/computed.html#Computed-Caching-vs-Methods) property voor button A en button B, beide doen hetzelfde, ze tellen steeds 1 erbij op als je op de knop klikt. Als je op button A klikt zal button B ook gerund worden, maar het effect zal alleen weergegeven worden voor button A.
@@ -194,7 +194,7 @@ Als je hetzelfde doet maar dan in een [computed](https://vuejs.org/v2/guide/comp
 Dus je zal je afvragen waarom je [methods](https://vuejs.org/v2/guide/computed.html#Computed-Caching-vs-Methods) zal moeten gebruiken als [computed](https://vuejs.org/v2/guide/computed.html#Computed-Caching-vs-Methods) heel efficient werkt. Ik zal [methods](https://vuejs.org/v2/guide/computed.html#Computed-Caching-vs-Methods) gebruiken bij het veranderen van states omdat de hele functie dan gerund moet worden. [Computed](https://vuejs.org/v2/guide/computed.html#Computed-Caching-vs-Methods) zal ik gebruiken binnen in de state als er data veranderd moet worden.
 
 
-**Vue.js shorthands**
+**Vue.js shorthands**<br/>
 Vue.js maakt gebruikt van de `V-prefix`. Zo weet Vue dat die iets moet aanpassen in de DOM. bijvoorbeeld `<div v-text="message"></div>`. Hier zie je de prefix `V`, gevolgd door de directive `text`, met als expressie `message`.
 
 Hetzelfde heb ik gebruik voor een onClick action. in Vue schrijft je het uit als `<a on:click="toggle()"></a>`, maar dit kan ook ingekort worden door het te schrijven als `@click`. De syntax ziet er dan het volgende uit `<a @click="toggle()"></a>`
@@ -215,7 +215,7 @@ presentatie [nienke](https://twitter.com/helenasometimes) over waarom en wanneer
 Question component aangemaakt 
 data inladen gelukt door [stackoverflow](https://stackoverflow.com/questions/45565349/how-to-acces-external-json-file-objects-in-vue-js-app)
 
-**new Vue vs export default**
+**new Vue vs export default**<br/>
 new vue maakt een nieuwe instantie aan, hiermee bedoel ik dat de aangemaakte component de root file zal worden en componenten daaraan gekoppeld kan worden. Export default gebruik je om componenten te declareren om die later te gebruiken.
 
 
@@ -227,10 +227,10 @@ Om dit te voorkomen moest ik eerder en vaker op [Github](https://github.com/) ga
 ## Herkansing
 Ik moest de opdracht herkansen omdat ik de nacht daarvoor last minute nog wat dingen wou aanpassen. Omdat ik niet mijn bestanden had gecommit, was ik alles kwijt. Mijn control-Z ging niet zover dan ik had gehoopt. Waardoor ik bij de beoordeling met een half product kwam. 
 
-**$emit & $on**
+**$emit & $on**<br/>
 met $emit kan je custom events aanmaken en deze meegeven aan een component. bijvoorbeeld een button. Vervolgens kan je met $on naar deze event luisteren om de acties uit te voeren die zijn meegeven met de $emit. De werking hiervan lijkt een beetje op props. Het verschil is dat je bij props alleen data van de parent component naar de child component kan meegeven. In sommige gevallen wil je soms communiceren met een component dat helemaal niet in relatie staat jouw desbetreffende component. Hierbij kan je goed gebruik maken van $emit en $on. Let wel op dat Vue.JS dit eigenlijk afkeurt. Vue.JS is zodanig gebouwd en bedoeld voor communicatie tussen de parent en child component (props). Maar voor kleine acties kan je best gebruik maken van $emit en $on.
 
-**Event Bus**
+**Event Bus**<br/>
 Hierboven vertelde ik hoe we custom events kunnen aanmaken en deze kunnen meegeven en ontvangen. Maar de vraag is nog wie kan deze waardes opvangen en vervoeren zodat de desbetreffende component de juiste data meekrijgt. Hiervoor heb je een `event Bus`. De bus zorgt ervoor dat je in een component een `event` kan `emitten` en ervoor zorgen dat hiernaar geluisterd wordt in een andere component met `$on`. 
 
 
